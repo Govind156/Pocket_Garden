@@ -1,6 +1,6 @@
 # Plant Store Frontend
 
-A React-based frontend for the Mini Plant Store application with Material-UI components.
+A React-based frontend for the cd  with Material-UI components.
 
 ## Features
 
