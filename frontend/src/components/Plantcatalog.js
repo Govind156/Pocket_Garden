@@ -48,7 +48,8 @@ const Plantcatalog = () => {
   const fetchPlants = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5000/api/plants');
+      // const response = await axios.get('http://localhost:5000/api/plants');
+      const response = await axios.get('https://pocket-garden.onrender.com/api/plants')
       setPlants(response.data);
       setError('');
     } catch (err) {
@@ -61,7 +62,8 @@ const Plantcatalog = () => {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/categories');
+      // const response = await axios.get('http://localhost:5000/api/categories');
+      const response = await axios.get('https://pocket-garden.onrender.com/api/categories')
       setCategories(response.data);
     } catch (err) {
       console.error('Error fetching categories:', err);

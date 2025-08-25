@@ -46,7 +46,8 @@ const Plantdetail = () => {
   const fetchPlant = async () => {
     try {
       setLoading(true);
-      const response = await axios.get(`http://localhost:5000/api/plants/${id}`);
+      // const response = await axios.get(`http://localhost:5000/api/plants/${id}`);
+      const response = await axios.get(`https://pocket-garden.onrender.com/api/plants/${id}`)
       setPlant(response.data);
       setError('');
     } catch (err) {
