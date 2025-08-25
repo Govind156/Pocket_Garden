@@ -140,7 +140,7 @@ const Addplant = () => {
 
     try {
       // const response = await axios.post('http://localhost:5000/api/plants', formData);
-      const response = await axios.get('https://pocket-garden.onrender.com/api/plants',formData)
+      const response = await axios.post('https://pocket-garden.onrender.com/api/plants',formData)
       setSuccess('Plant added successfully!');
       
       // Reset form
