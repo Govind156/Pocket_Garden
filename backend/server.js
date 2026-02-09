@@ -23,9 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/plants',plantroute)
 app.use('/api/categories',categoriesroute)
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
-});
 
 
 app.listen(PORT,()=>{console.log("server is listening on port 5000")})
